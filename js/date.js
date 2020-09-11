@@ -111,8 +111,7 @@ function getTimeInfo() {
     let month = today.getMonth() + 1;
     let date = today.getDate();
     let day = days[today.getDay()];
-    //let hour = today.getHours();
-    let hour = '11';
+    let hour = today.getHours();
     let minute = today.getMinutes();
     let second = today.getSeconds();
 
