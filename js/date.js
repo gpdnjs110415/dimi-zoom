@@ -211,10 +211,12 @@ function getZoom(time) {
 function showTimetable(num) {
     if (num == '1') {
         document.getElementById('timetable').style.opacity = '1';
+        document.getElementById('timetable').style.zIndex = '2';
         document.getElementById('timetableBtn').style.opacity = '0';
         document.getElementById('zoomLink').style.zIndex = '0';
         document.getElementById('covidSurv').style.opacity = '0';
     } else {
+        document.getElementById('timetable').style.zIndex = '-3';
         document.getElementById('timetable').style.opacity = '0';
         document.getElementById('timetableBtn').style.opacity = '1';
         document.getElementById('zoomLink').style.zIndex = '1';
