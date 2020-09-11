@@ -1,0 +1,51 @@
+.classChoicePopup{
+    position: absolute;
+    background-color: #00000054;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+#class1, #class2, #class3, #class4, #class5, #class6{
+    background-color:white;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3rem;
+    text-align: center;
+    width:fit-content;
+    height: fit-content;
+    padding: 0.7rem 0.6rem;
+    display: block;
+    margin: 0rem 0.5rem;
+    font-size: 0.5rem;
+}
+
+#class1:hover, #class2:hover, #class3:hover, #class4:hover, #class5:hover, #class6:hover{
+    background-color:rgb(45, 140, 255);
+    color: white;
+    border: 1px solid rgb(45, 140, 255);
+}
+
+#popup{
+    flex-direction: column;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width:fit-content;
+    border-radius: 8rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+}
+
+#popupBtn{
+    margin-top:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

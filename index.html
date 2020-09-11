@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162408343-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162408343-2');
+    </script>
+
+    <meta property="og:url" content="https://gpdnjs110415.github.io/2-4_goToZoomClass/" />
+    <meta property="og:title" content="📘 2-4 ZOOM 수업 바로가기 📘" />
+    <meta property="og:description" content="버튼 한번 클릭으로 수업참여 하자!" />
+    <meta property="og:image"
+        content="https://github.com/gpdnjs110415/2-4_goToZoomClass/blob/master/image/previewimg.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📘 2-4 ZOOM 수업 바로가기 📘</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popup.css">
+</head>
+
+<body>
+    <!--
+        <header>
+            <div class="header">
+                <img src="https://lh3.googleusercontent.com/1DqxbUca62LmV1ehZirHGWYBef9Jrtl3DhZ4m6YBnWCUX-XNr3lcnYKb31R-7ukpKAw"
+                    alt="">
+                <span>2-4 ZOOM 수업 바로가기</span>
+            </div>
+        </header>
+    -->
+    <div class="classChoicePopup" onclick="classChoicePopup(0);">
+        <div id="popup">
+            <div>우리반 선택하기</div>
+            <div id="popupBtn">
+                <div id="class1" onclick="timetableChange(1);">1반</div>
+                <div id="class2" onclick="timetableChange(2);">2반</div>
+                <div id="class3" onclick="timetableChange(3);">3반</div>
+                <div id="class4" onclick="timetableChange(4);">4반</div>
+                <div id="class5" onclick="timetableChange(5);">5반</div>
+                <div id="class6" onclick="timetableChange(6);">6반</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div id="classNum" onclick="classChoicePopup(1);">4반</div>
+        <div id="date">2020년 0월 0일</div>
+        <div id="now">오전 0시 0분</div>
+        <div class="subjectInfo">
+            <div id="time">1교시</div>
+            <div id="subject">공업수학</div>
+            <div id="teacher">이효*T</div>
+        </div>
+        <div id="leftTime" class="blinking">다음 수업까지 00분</div>
+
+        <div id="enterZoomBtn">
+            <div id="enterZoom"><a id="zoomLink" href="#" target="_blank">수업 들어가기</a></div>
+
+        </div>
+
+        <footer>
+            <span>@18WP이혜원</span>
+        </footer>
+
+        <div id="covidSurv">
+            <a href="https://hcs.eduro.go.kr" target="_blank">
+                <p>건강상태<br>자가진단</p>
+            </a>
+        </div>
+
+        <div id="timetableBtn" onclick="showTimetable(1);">
+            시간표<br>보기
+        </div>
+
+        <div id="timetable">
+            <p onclick="showTimetable(0);">X</p>
+            <img src="./image/4.png">
+        </div>
+
+    </div>
+
+    <script src="./js/date.js"></script>
+</body>
+
+</html>

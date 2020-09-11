@@ -1,0 +1,234 @@
+*{
+    font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 1.5rem;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+body{
+    background-color: rgb(243, 243, 243);
+    border: 1px solid purple;
+}
+.header{
+    box-shadow: 0rem 0.2rem 0.8rem rgba(0, 0, 0, 0.226);
+    text-align: center;
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.header span{
+    color: rgb(68, 68, 68);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.header img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}*/
+
+.container{
+    background-color:rgb(235, 235, 235);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subjectInfo{
+    background-color: white;
+    padding: 2rem 4rem;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    text-align: center;
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+#classNum{
+    font-size:0.7rem;
+    border:1px solid rgb(45, 140, 255);
+    border-radius: 2rem;
+    padding: 0.2rem 0.7rem;
+    margin-bottom: 0.7rem;
+    background-color :white;
+    color: rgb(45, 140, 255);
+}
+
+#teacher{
+    padding-top: 0.7rem;
+    font-size:1rem;
+}
+
+#enterZoom{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    background-color: rgb(45, 140, 255);
+}
+#enterZoom a{
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.397);
+
+}
+
+
+#leftTime{
+    font-size:0.5rem;
+    color: rgb(252, 63, 63);
+    margin-bottom:0.3rem;
+}
+
+#timetable{
+    color: rgb(118,113,113);
+    background-color :white;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    text-align: right;
+    padding: 1rem 1rem;
+    border-radius:2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 0;
+    z-index: 0;
+}
+
+#timetable p {
+    margin: 0;
+    font-size:0.8rem;
+    padding-right: 1rem;
+}
+
+#timetable img{
+    width:20rem;
+    padding: 0.5rem;
+}
+
+#timetableBtn{
+    color:  gray;
+    background-color :white;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.8rem 0.7rem;
+    border-radius:3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+#timetableBtn:hover{
+    color:  white;
+    background-color :rgb(45, 140, 255);;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.8rem 0.7rem;
+    border-radius:3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+#covidSurv{
+    background-color :white;;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    padding: 0.8rem 1rem;
+    border-radius:3rem;
+    position: absolute;
+    right: 6rem;
+    bottom: 1rem;
+    opacity: 1;
+    z-index: 1;
+}
+#covidSurv p {
+    font-size: 1rem;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+    margin: 0;
+    padding: 0rem;
+}
+
+#covidSurv:hover{
+    background-color :rgb(45, 140, 255);
+}
+#covidSurv:hover p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0rem;
+}
+a{
+    text-decoration: none;
+}
+
+footer span{
+    color:rgba(118, 113, 113, 0.411);
+    font-size:0.5rem;
+}
+footer{
+    margin-top:3rem;
+}
+
+
+@media ( max-width: 768px ) {
+    *{
+        font-size:1rem;
+    }
+}
+
+
+.blinking{
+	-webkit-animation:blink 0.4s ease-in-out infinite alternate;
+    -moz-animation:blink 0.4s ease-in-out infinite alternate;
+    animation:blink 0.4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+            
