@@ -49,3 +49,12 @@
     align-items: center;
 
 }
+
+@media ( max-width: 768px ) {
+    #popup{
+        padding: 1rem 2rem;
+    }
+    #class1, #class2, #class3, #class4, #class5, #class6{
+        margin: 0rem 0.3rem;
+    }
+}

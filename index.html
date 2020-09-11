@@ -3,23 +3,27 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162408343-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!--
 
-        gtag('config', 'UA-162408343-2');
-    </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162408343-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-162408343-2');
+        </script>
+
+    -->
 
     <meta property="og:url" content="https://gpdnjs110415.github.io/2-4_goToZoomClass/" />
-    <meta property="og:title" content="📘 2-4 ZOOM 수업 바로가기 📘" />
+    <meta property="og:title" content="📘 디미고 ZOOM 수업 바로가기 📘" />
     <meta property="og:description" content="버튼 한번 클릭으로 수업참여 하자!" />
     <meta property="og:image"
         content="https://github.com/gpdnjs110415/2-4_goToZoomClass/blob/master/image/previewimg.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📘 2-4 ZOOM 수업 바로가기 📘</title>
+    <title>📘 디미고 ZOOM 수업 바로가기 📘</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/popup.css">
 </head>
@@ -34,7 +38,7 @@
             </div>
         </header>
     -->
-    <div class="classChoicePopup" onclick="classChoicePopup(0);">
+    <div class="classChoicePopup" id="classChoicePopup">
         <div id="popup">
             <div>우리반 선택하기</div>
             <div id="popupBtn">
@@ -80,7 +84,7 @@
 
         <div id="timetable">
             <p onclick="showTimetable(0);">X</p>
-            <img src="./image/4.png">
+            <img id="timetableImg" src="./image/4.png">
         </div>
 
     </div>
