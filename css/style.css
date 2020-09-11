@@ -100,6 +100,7 @@ html, body{
 }
 
 #timetableBtn{
+    height: fit-content;
     color:  gray;
     background-color :white;
     box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
@@ -115,6 +116,7 @@ html, body{
 }
 
 #timetableBtn:hover{
+    height: fit-content;
     color:  white;
     background-color :rgb(45, 140, 255);
     box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
