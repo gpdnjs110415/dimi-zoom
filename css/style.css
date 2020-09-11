@@ -117,6 +117,16 @@ html, body{
 #timetableBtn:hover{
     color:  white;
     background-color :rgb(45, 140, 255);
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.8rem 0.7rem;
+    border-radius:3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 1;
+    z-index: 2;
 }
 
 #covidSurv, #benedu{
@@ -145,9 +155,22 @@ html, body{
 
 #covidSurv:hover, #benedu:hover{
     background-color :rgb(45, 140, 255);
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.397);
+    padding: 0.8rem 1rem;
+    border-radius:4rem;
+    position: absolute;
+    right: 5.3rem;
+    bottom: 1rem;
+    opacity: 1;
+    z-index: 1;
 }
 #covidSurv:hover p , #benedu:hover p{
     color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0rem;
 }
 a{
     text-decoration: none;
