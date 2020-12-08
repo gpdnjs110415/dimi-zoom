@@ -199,7 +199,7 @@ function getZoom(time) {
     } else if (timetableNow == 18) {
         document.getElementById('teacher').innerText = teacher[userClassTimetable[day][time + 1]] + '* T';
         document.getElementById('zoomLink').href = zoom + zoomId[userClassTimetable[day][time + 1]];
-        document.getElementById('subject').innerText = subject[userClassTimetable[day][time + 1]] + '\n(5교시)';
+        document.getElementById('subject').innerText = subject[userClassTimetable[day][time + 1]] + '\n(4교시)';
         document.getElementById('subject').style.paddingTop = '1.2rem';
     } else {
         document.getElementById('teacher').innerText = teacher[timetableNow];
