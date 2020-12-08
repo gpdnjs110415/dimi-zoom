@@ -1,5 +1,5 @@
 let days = ['일', '월', '화', '수', '목', '금', '토'];
-let period = ['조회', '1교시', '2교시', '3교시', '4교시', '점심시간', '5교시', '6교시', '7교시', '종례', '자습'];
+let period = ['조회', '1교시', '2교시', '3교시', '점심시간', '4교시', '5교시', '6교시', '7교시', '종례', '자습'];
 
 
 //                문학(4)       공수(3)         수2          영어          응프개         화학          중국어        성직           응프화        운건(5)           정보관          진로      정통(6)        자구           CA           HR               조회          종례      점심    자습       공수(5,6)        상경                  회계           회계           정처(1)        문콘                                    
@@ -146,12 +146,12 @@ function getTimeInfo() {
     document.getElementById('time').innerText = period[time];
 
     //다음교시까지 남은 시간 체크
-    if (time <= 4 && time > 0) {
+    if (time <= 3 && time > 0) {
         leftTime = 60 - minute;
-    } else if (time > 4 && time < 10) {
+    } else if (time > 3 && time < 10) {
         leftTime = 50 - minute;
     }
-    if (hour == 12) {
+    if (hour == 11) {
         leftTime = 11;
     }
     //쉬는시간이면 남은시간 출력
